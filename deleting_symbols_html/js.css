@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+body {
+    background-color: cornflowerblue;
+    min-height: 100vh;
+}
+.menu {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+ }
+ .menu a {
+    display: flex;
+    float: left;
+    width: 19.4%;
+    height: 40px;
+    font-size: larger;
+    text-decoration: none;
+    text-align: center;
+    border-left: 4px solid blue;
+    border-right: 4px solid rgba(177, 251, 252, 0.6);
+    border-top: 4px solid rgba(177, 251, 252, 0.6);
+    border-bottom: 4px solid rgba(177, 251, 252, 0.6);
+    background: linear-gradient(to right,rgba(0, 145, 255, 0.6), rgba(177, 251, 252, 0.6));
+ }
+h4 {
+    text-align: center;
+}
+#czysc {
+    display: fixed;
+    width: 100px;
+    height: 50px;
+}
