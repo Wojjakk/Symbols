@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Symbols that you dont want</title>
+<link rel="stylesheet" href="js.css">
+</head>
+<body> 
+    <h4>Write the text that have unwanted symbols</h4>
+<textarea id="clear" rows="20" cols="100" placeholder="Waiting for text..."></textarea>
+<div id="nob">
+    <br><br>
+    <h4 style="text-align: left;">Enter the symbol</h4>
+<input type="text" id="input">
+<button id="Click">Activation</button>
+</div>
+<script>
+    function getAway(){
+        let znak = document.querySelector('input#input');
+        let textarea = document.getElementById('clear');
+        let a = textarea.value.split(znak.value).join('');
+        textarea.value = a;
+        textarea.select();
+        document.execCommand("copy");
+    }
+    const button = document.getElementById('Click');
+    button.addEventListener("click", () =>{
+       getAway();
+   });
+   console.log(a);
+</script>
+</body>
+</html>
