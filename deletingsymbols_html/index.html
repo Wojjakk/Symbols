@@ -11,15 +11,15 @@
 <div id="nob">
     <br><br>
     <h4 style="text-align: left;">Enter the symbol</h4>
-<input type="text" id="input">
+<input type="text" id="symbol">
 <button id="Click">Activation</button>
 </div>
 <script>
     function getAway(){
-        let znak = document.querySelector('input#input');
+        let symbol = document.querySelector('input#symbol');
         let textarea = document.getElementById('clear');
-        let a = textarea.value.split(znak.value).join('');
-        textarea.value = a;
+        let b = textarea.value.split(znak.value).join(symbol);
+        textarea.value = b;
         textarea.select();
         document.execCommand("copy");
     }
