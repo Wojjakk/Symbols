@@ -1,42 +1,98 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-body {
-    background-color: cornflowerblue;
-    min-height: 100vh;
-}
-.menu {
-    float: left;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    
- }
- .menu a {
-    display: flex;
-    float: left;
-    width: 19.4%;
-    height: 40px;
-    font-size: larger;
-    text-decoration: none;
-    text-align: center;
-    border-left: 4px solid blue;
-    border-right: 4px solid rgba(177, 251, 252, 0.6);
-    border-top: 4px solid rgba(177, 251, 252, 0.6);
-    border-bottom: 4px solid rgba(177, 251, 252, 0.6);
-    background: linear-gradient(to right,rgba(0, 145, 255, 0.6), rgba(177, 251, 252, 0.6));
- }
-h4 {
-    text-align: center;
-}
-#czysc {
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Readex+Pro&display=swap');
 
-    display: fixed;
-    width: 100px;
-    height: 50px;
+* {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
+    color: #aaa;
+}
+
+body {
+    background-color: #333;
+}
+
+header {
+    background-color: #2a2a2a;
+    width: 100%;
+    height: 100px;
+}
+
+footer {
+    min-height: 65px;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    bottom: 0;   
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+p {
+    margin-top: 0px;
+    margin-left: 4px;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    font-size: 25px;
+    background-color: #222;
+    text-align: center;
+    position: relative;
+}
+#menu {
+    margin: 0;
+}
+img.logo {
+    left: 0;
+    height: 100%;
+    position: absolute;
+}
+
+.text {
+    margin: 10px;
+    color: #aaa;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.textfirst {
+    font-size: 20px;
+}
+
+#first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top:32px;
+}
+
+img#logo_big {
+    height: 100px;
+}
+
+@media only screen and (max-width: 510px) {
+    nav, #first, footer {
+      width: 100%;
+    }
+    img.logo {
+        display: none;
+    }
+  }
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+input, #area, button {
+    background-color: #222;
+}
+
+#container{
+    text-align: center;
+    margin-top: 45vh;
 }
